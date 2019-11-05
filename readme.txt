@@ -26,4 +26,4 @@ S17150100101190829100602067
 13186867699
 
 
-Creating a new branch is quick.这是dev的
+Creating a new branch is quick.这是dev的.
