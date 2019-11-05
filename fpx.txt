@@ -3,4 +3,5 @@ if£¨a>b£©:
 	b=777
 else
 	c=999
+print(c)
 	
