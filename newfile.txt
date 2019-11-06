@@ -1,0 +1,15 @@
+# 检索油站日报列表 交班数据才有 未交班查不到
+SELECT 
+   STATION_ID AS stationId,
+   STATION_NAME AS stationName,
+   STAT_DATE AS statDate,
+   
+   PR_ID AS prId,
+   PR_NAME AS prName,
+   SUM(VOL) AS prVol,
+   SUM(RECEIVABLE_AMOUNT) AS prAmount
+  FROM new_stat.group_fuelling_orders 
+  WHERE HQ_ID = '17228'
+  AND STAT_DATE = '2019-11-05'
+  GROUP BY STATION_ID ,PR_ID
+  ORDER BY STATION_ID
